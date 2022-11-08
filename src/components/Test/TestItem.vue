@@ -33,7 +33,8 @@ export default {
   data () {
     return {
       isEditing: false,
-      uniqueId: this.id
+      uniqueId: this.id,
+      isDone: this.done
     }
   },
   components: {
@@ -55,9 +56,6 @@ export default {
     }
   },
   computed: {
-    isDone () {
-      return this.done
-    }
   },
   props: {
     label: { required: true, type: String },
